@@ -1,0 +1,9 @@
+services:
+  bot:
+    build: .
+    container_name: sub_gate_bot
+    restart: unless-stopped
+    env_file:
+      - ./bot/config/tokens.env
+    volumes:
+      - ./data:/app/data
