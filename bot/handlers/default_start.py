@@ -12,6 +12,11 @@ router = Router()
 async def start_cmd(message: types.Message):
     """Обработчик команды старт"""
     msg = "Задания выполены! Получить доступ к сериалу по кнопке ниже"
+
+    await message.answer(
+        "*Условная проверка подписок*",
+        parse_mode="HTML"
+    )
     
     await message.answer(
         msg,
