@@ -1,6 +1,6 @@
 from aiogram import Router
 
-from .default_start import router as start_router
+from .support_api_start import router as start_router
 
 router = Router()
 
